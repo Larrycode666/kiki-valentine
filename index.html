@@ -88,6 +88,7 @@
     <button id="noBtn" onmouseover="moveNo()">NO 🙈</button>
 
     <div id="loveMessage"></div>
+<img id="kikiPic" src="kiki.jpg" style="display:none; width:260px; border-radius:20px; margin-top:20px; box-shadow: 0 0 20px #ff66a3;">
 
     <!-- Romantic Music -->
     <audio id="music" loop>
@@ -104,7 +105,8 @@
             noBtn.style.top = y + "px";
         }
 
-        function sayYes() {
+        function sayYes() {document.getElementById("kikiPic").style.display = "block";
+
             document.getElementById("loveMessage").innerHTML =
                 "YAYYYYY!!! 💖💖💖<br>Kiki my Love, I choose you every day 💘💞❤️";
 
